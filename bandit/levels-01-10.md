@@ -45,6 +45,6 @@
 - Using `--` after the cat command and putting the file in quotes
 
 **New to me:**
-- Putting a filename with spaces in quotes treats the text as a single argument
+- Wrapping a filename that has spaces in it with quotes treats the text as a single argument
 - Using `\` before each space strips the special meaning of the space
 - Using tab to autocomplete the file or folder name inserts the necessary escape characters or quotes automatically.
