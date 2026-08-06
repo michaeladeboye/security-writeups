@@ -57,5 +57,21 @@
 - Using `cd` to change to the inhere directory, then `ls -a` to list all the directory contents, then using the `cat` function to obtain the password
 
 **New to me:**
-- ls -A lists everything in the directory except `.` and `..`
-- ls -a list everything in the directory
+- `ls -A` lists everything in the directory except `.` and `..`
+- `ls -a` list everything in the directory
+
+## Level 5
+
+**Goal:** Get the password from the only human-readable file in the inhere directory and use it to log into bandit5 
+
+**What worked:**
+- Using then `ls -A` to list the directory contents, then using `cat --` on every file until I found the one with the password
+
+**New to me:**
+- `reset` resets a terminal session
+-  a "human readable file" is a file that can be read by humans i.e. not binary data
+
+**Not fully understood**
+- What caused the terminal to mess up when I used the `cat` command on the files that weren't human readable
+- why when I entered `ls -h` it listed all the files as human readable
+
