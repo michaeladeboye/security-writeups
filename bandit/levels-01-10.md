@@ -39,12 +39,12 @@
 
 ## Level 3
 
-**Goal:** Get the password from a file called "--spaces in file name--"" and use it to log into bandit3 
+**Goal:** Get the password from a file called "--spaces in file name--" and use it to log into bandit3 
 
 **What worked:**
 - Using `--` after the cat command and putting the file in quotes
 
 **New to me:**
 - Putting a filename with spaces in quotes treats the text as a single argument
-- Using a backslash before each space strips the special meaning of the space
+- Using `\` before each space strips the special meaning of the space
 - Using tab to autocomplete the file or folder name inserts the necessary escape characters or quotes automatically.
