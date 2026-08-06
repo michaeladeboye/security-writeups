@@ -48,3 +48,14 @@
 - Wrapping a filename that has spaces in it with quotes treats the text as a single argument
 - Using `\` before each space strips the special meaning of the space
 - Using tab to autocomplete the file or folder name inserts the necessary escape characters or quotes automatically.
+
+## Level 4
+
+**Goal:** Get the password from a hidden file in the inhere directory and use it to log into bandit4 
+
+**What worked:**
+- Using `cd` to change to the inhere directory, then `ls -a` to list all the directory contents, then using the `cat` function to obtain the password
+
+**New to me:**
+- ls -A lists everything in the directory except `.` and `..`
+- ls -a list everything in the directory
