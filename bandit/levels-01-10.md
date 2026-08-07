@@ -65,13 +65,22 @@
 **Goal:** Get the password from the only human-readable file in the inhere directory and use it to log into bandit5 
 
 **What worked:**
-- Using then `ls -A` to list the directory contents, then using `cat --` on every file until I found the one with the password
+- Using `ls -A` to list the directory contents, then using `cat --` on every file until I found the one with the password
 
 **New to me:**
 - `reset` resets a terminal session
--  a "human readable file" is a file that can be read by humans i.e. not binary data
+-  a "human readable file" is a file that can be read by humans i.e. ASCII or Unicode
 
 **Not fully understood**
 - What caused the terminal to mess up when I used the `cat` command on the files that weren't human readable
-- why when I entered `ls -h` it listed all the files as human readable
+
+## Level 6
+
+**Goal:** Get the password from a file somewhere in the inhere directory that is human-readable, 1033 bytes in size, and not executable 
+
+**What worked:**
+- Using `du -ab` to find which of the files in each of the directories in the inhere directory has a byte size of 1033, then `ls -hA` to find which of the files is human readable and `find -executable` to eliminate the files that are executable.
+
+**New to me:**
+- Multiple options can be used simultaneously after a single dash
 
