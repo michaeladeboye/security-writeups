@@ -86,10 +86,10 @@
 
 ## Level 7
 
-**Goal:** Find the password which is somewhere on the server and is owned by user bandit7, owned by group bandit6, and 33 bytes in size.
+**Goal:** Find the password which is somewhere on the server and is owned by user bandit7, owned by group bandit6, and 33 bytes in size
 
 **What I tried first:**
-- Ran `find / -user bandit7 -group bandit6 -size33c`. Permission for access was denied.
+- Ran `find / -user bandit7 -group bandit6 -size33c`. Permission for access was denied
 
 **What worked:**
 - Ran `find -user bandit7 -group bandit6 -size33c` and added `2>/dev/null` at the end to hides all errors, which allowed me to see where the password is
@@ -97,4 +97,14 @@
 **New to me:**
 - `2>/dev/null` hides all error messages
 - `/` is the root directory
+
+## Level 8
+
+**Goal:** Find the password in the file data.txt next to the word millionth
+
+**What I tried first:**
+- Ran `ls -A` on data.txt. The file was hundreds of lines if not more so finding the password would be extremely tedious.
+
+**What worked:**
+- Ran `grep millionth data.txt` which printed the line in data.txt that had the word millionth 
 
