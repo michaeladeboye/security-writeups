@@ -103,7 +103,7 @@
 **Goal:** Find the password in the file data.txt next to the word millionth
 
 **What I tried first:**
-- Ran `ls -A` on data.txt. The file was hundreds of lines if not more so finding the password would be extremely tedious.
+- Ran `ls -A` on data.txt. The file was hundreds of lines if not more so finding the password would be extremely tedious
 
 **What worked:**
 - Ran `grep millionth data.txt` which printed the line in data.txt that had the word millionth 
