@@ -120,3 +120,16 @@
 
 **New to me:**
 - Lines need to be sorted for `uniq` to filter for unique lines
+
+## Level 10
+
+**Goal:** Find the password which is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+
+**What I tried first:**
+- Ran `grep == data.txt` which outputted "grep: (standard input): binary file matches"
+
+**What worked:**
+- Ran `strings data.txt | grep ==` which outputted the human-readable strings in the file that had "==" in them
+
+**New to me:**
+- The `strings` command outputs the human-readable strings in a file
