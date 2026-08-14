@@ -108,3 +108,15 @@
 **What worked:**
 - Ran `grep millionth data.txt` which printed the line in data.txt that had the word millionth 
 
+## Level 9
+
+**Goal:** Find the password which is stored in the file data.txt and is the only line of text that occurs only once
+
+**What I tried first:**
+- Ran `uniq -uc data.txt` which outputted multiple lines with a count of one
+
+**What worked:**
+- Ran `sort data.txt | uniq -uc` which only outputted the line with the password
+
+**New to me:**
+- Lines need to be sorted for `uniq` to filter for unique lines
