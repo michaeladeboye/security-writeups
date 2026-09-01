@@ -38,3 +38,18 @@
 - `tar -xf` extracts a file from within another file
 - `gzip` and `bzip2` compress files
 - Each file type has its own file signature that can be seen when viewing a hexdump of the file
+
+## Level 14
+
+**Goal:** Get the private SSH key and use it to log in to the next level
+
+**What I tried first:**
+- I first attempted to use `scp` on the bandit14 file which did not work because I was in Bandit and you cannot ssh from inside the level and I was supposed to copy the private key.
+
+**What worked:**
+- I logged out of the level and copied the `sshkey.private` file using `scp`
+- I then changed the permissions on the `sshkey.private` file using the `chmod` command to be able to read, write, and execute the file
+- I then used the `ssh` command with the `-i` option using `sshkey.private` as its argument and the destination being the next level
+
+**New to me:**
+- The `-i` option for the `ssh` command selects the file  from which the private key for public key authentication is read
