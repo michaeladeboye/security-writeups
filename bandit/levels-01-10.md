@@ -89,10 +89,10 @@
 **Goal:** Find the password which is somewhere on the server and is owned by user bandit7, owned by group bandit6, and 33 bytes in size
 
 **What I tried first:**
-- Ran `find / -user bandit7 -group bandit6 -size33c`. Permission for access was denied
+- Ran `find / -user bandit7 -group bandit6 -size 33c`. Permission for access was denied
 
 **What worked:**
-- Ran `find -user bandit7 -group bandit6 -size33c` and added `2>/dev/null` at the end to hides all errors, which allowed me to see where the password is
+- Ran `find -user bandit7 -group bandit6 -size 33c` and added `2>/dev/null` at the end to hides all errors, which allowed me to see where the password is
 
 **New to me:**
 - `2>/dev/null` hides all error messages
