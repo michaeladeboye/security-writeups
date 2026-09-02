@@ -63,3 +63,15 @@
 
 **New to me:**
 - The `nc` command allows to read and write data over a network connection.
+
+## Level 16
+
+**Goal:** Submit the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+
+**What worked:**
+- I used the openssl command `s_client` with the -connect option while specifying localhost as the host and port 30001 as the port to connect while using SSL/TLS
+
+**New to me:**
+- openssl commands need to be specified by putting openssl before the command
+- to see an openssl command's man page, you must enter `openssl-(command)` ex: `open-ssl-s_client`
+- `s_client` implements a generic SSL/TLS client which connects to aremote host using SSL/TLS.
