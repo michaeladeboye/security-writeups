@@ -44,7 +44,7 @@
 **Goal:** Get the private SSH key and use it to log in to the next level
 
 **What I tried first:**
-- I first attempted to use `scp` on the bandit14 file which did not work because I was in Bandit and you cannot ssh from inside the level and I was supposed to copy the private key.
+- I first attempted to use `scp` on the bandit14 file which did not work because I was in Bandit and you cannot ssh from inside the level and I was supposed to copy the private key
 
 **What worked:**
 - I logged out of the level and copied the `sshkey.private` file using `scp`
@@ -56,7 +56,7 @@
 
 ## Level 15
 
-**Goal:** Submit the password of the current level to port 30000 on localhost.
+**Goal:** Submit the password of the current level to port 30000 on localhost
 
 **What worked:**
 - I used the `nc` command with the with the the destination as localhost and the port as 30000
@@ -66,7 +66,7 @@
 
 ## Level 16
 
-**Goal:** Submit the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+**Goal:** Submit the password of the current level to port 30001 on localhost using SSL/TLS encryption
 
 **What worked:**
 - I used the openssl command `s_client` with the -connect option while specifying localhost as the host and port 30001 as the port to connect while using SSL/TLS
@@ -74,4 +74,22 @@
 **New to me:**
 - openssl commands need to be specified by putting openssl before the command
 - to see an openssl command's man page, you must enter `openssl-(command)` ex: `open-ssl-s_client`
-- `s_client` implements a generic SSL/TLS client which connects to aremote host using SSL/TLS.
+- `s_client` implements a generic SSL/TLS client which connects to a remote host using SSL/TLS.
+
+## Level 17
+
+**Goal:** Retrieve the credentials for the next level by submitting the password of the current level to a port on localhost in the range 31000 to 32000 that speaks SSL/TLS
+
+**What I tried first:**
+- I used the `nc` command with the -z option in order to scan for ports with a listening server which worked but did not tell me which ports spoke SSL/TLS
+
+**What worked:**
+- I used the `nmap` command with the -sV option to see the service and the -p option to specify the port range
+- I then submitted the password of the current level to the correct port using `s_client -connect` as well as the `-quiet` flag which outputted a private key
+- I copied the private key, logged out, created a file and put the private key into that file
+- I then used the `ssh` command with the `-i` option using the file I created as its argument and the destination being the next level
+
+**New to me:**
+- `nmap` determines what hosts are available on the network and what services those hosts are offering, as well as much more
+
+
