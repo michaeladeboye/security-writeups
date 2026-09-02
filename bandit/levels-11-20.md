@@ -92,4 +92,13 @@
 **New to me:**
 - `nmap` determines what hosts are available on the network and what services those hosts are offering, as well as much more
 
+## Level 18
+
+**Goal:** Find the password for the next level in passwords.new. It is the only line that has been changed between passwords.old and passwords.new
+
+**What worked:**
+- I used the `diff` command on passwords.old and passwords.new
+
+**New to me:**
+- The `diff` command compares the contents of 2 files and outputs the list of changes needed to convert one file into the other.
 
