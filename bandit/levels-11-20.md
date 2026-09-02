@@ -102,3 +102,16 @@
 **New to me:**
 - The `diff` command compares the contents of 2 files and outputs the list of changes needed to convert one file into the other.
 
+## Level 19
+
+**Goal:** Find the password for the next level in a file readme in the home directory without being able to login using ssh
+
+**What I tried first:**
+- I attempted to login using `ssh` but I was automatically logged out
+
+**What worked:**
+- I used `ssh` to execute the `cat` command on the readme file in the remote host, which gave me the password
+
+**New to me:**
+- `ssh` can be used to execute commands remotely
+
