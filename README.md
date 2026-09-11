@@ -1,7 +1,7 @@
 # Security Writeups
 
 CTF solutions, home lab builds, and detection engineering notes.
-CIS + Cybersecurity @ UTSA.
+IS&T + Cybersecurity @ UTSA.
 
 ## CTFs
 - [OverTheWire: Bandit](bandit/) — Linux fundamentals, levels 0–33
@@ -10,6 +10,9 @@ CIS + Cybersecurity @ UTSA.
 ## Home Lab
 - [Build notes](homelab/) — Kali attacker, Windows target, Wazuh SIEM
 - [Detection rules](homelab/detections/) — custom rules + what triggered them
+
+## Incident Handler Journal
+- [Journal](incident-handler-journal.md) - Incident Handling, Wireshark, tcpdump
 
 ## Tools
 - Coming soon
