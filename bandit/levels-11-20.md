@@ -115,3 +115,14 @@
 **New to me:**
 - `ssh` can be used to execute commands remotely
 
+## Level 20
+
+**Goal:** Find the password for the next level in /etc/bandit_pass after using the setuid binary.
+
+**What worked:**
+- Executed the binary which said it executes another command as another user
+- Used the binary to execute the cat command on `/etc/bandit_pass/bandit20` which can only be read by the user bandit20
+
+**New to me:**
+- Suid replaces the x of the user permission
+- It means the binary will be run as the owner of the binary
