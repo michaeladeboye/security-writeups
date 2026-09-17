@@ -29,6 +29,7 @@
 
 **What worked:**
 - After running the `cat` command on the file  was referenced in the file that contained the instructions for the cron program, I ran `echo I am user $bandit23 | md5sum | cut -d ' ' -f 1` which runs the script which creates the file that has the password. From there, I ran the `cat` command on the file and got the password
+
 **New to me:**
 - Variables in bash scripting contain a value
 - The syntax`var_name=var_value` is used to declare a variable in bash scripting
