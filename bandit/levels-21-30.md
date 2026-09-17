@@ -19,3 +19,19 @@
 **New to me:**
 - Cron is a time-based job scheduler
 - There are multiple folders that contain cronjobs
+
+## Level 23
+
+**Goal:**  Find the password from a program is running automatically at regular intervals from cron. Look in /etc/cron.d/ for the configuration and see what command is being executed
+
+**What I tried first** 
+- I listed the items in the `/etc/cron.d directory` and used the `cat` command on the file that corresponds with the level. I then ran the `cat` command on the file  was referenced in the file that contained the instructions for the cron program and tried to run the `cat` command on the file that the cron program was writing the password to. That did not work because variables were used rather than a filename
+
+**What worked:**
+- After running the `cat` command on the file  was referenced in the file that contained the instructions for the cron program, I ran `echo I am user $bandit23 | md5sum | cut -d ' ' -f 1` which creates the file and runs the script that outputs the password
+
+**New to me:**
+- Variables in bash scripting contain a value
+- The syntax`var_name=var_value` is used to declare a variable in bash scripting
+- The syntax `var_name=$(command)` saves the output of a command in a variable
+- `$var_name` accesses the value of an existing variable
