@@ -37,6 +37,8 @@ A working log of security incident investigations and detection work, started as
 - Filtered and inspected UDP DNS traffic to examine protocol data, e.g. `udp.port == 53`
 - Applied filters to TCP packet data to search for specific payload text, e.g. `tcp.port == 80`
 
+**MITRE ATT&CK:** None
+
 ---
 
 ## Entry #3 — 9/10/26
@@ -50,6 +52,8 @@ A working log of security incident investigations and detection work, started as
 - Used tcpdump to filter live network traffic, e.g. `sudo tcpdump -i eth0 -v -c5`
 - Captured network traffic to a file, e.g. `sudo tcpdump -i eth0 -nn -c9 port 80 -w capture.pcap &`
 - Filtered the captured packet data, e.g. `sudo tcpdump -nn -r capture.pcap -v`
+
+**MITRE ATT&CK:** None
 
 ---
 
@@ -90,6 +94,8 @@ This scenario placed me as a SOC analyst investigating a suspicious file hash af
 - **Why:** A malicious actor sent a phishing email with a malicious file disguised as a resume; the employee downloaded it, triggering the alert.
 
 **Additional notes:** To prevent a repeat, the company should train employees to spot phishing emails — for example, grammatical errors and inconsistencies in the message.
+
+**MITRE ATT&CK:** T1566.001 (Spearphishing Attachment)
 
 ---
 
