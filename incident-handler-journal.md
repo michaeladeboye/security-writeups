@@ -116,5 +116,3 @@ This scenario placed me as a SOC analyst investigating a suspicious file hash af
 
 **Additional notes:** The employee who first received the attacker's email claiming the data theft should have escalated it immediately rather than waiting for a follow-up message.
 
----
-
