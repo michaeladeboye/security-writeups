@@ -112,13 +112,3 @@ This scenario placed me as a SOC analyst investigating a suspicious file hash af
 
 ---
 
-## Reflections
-
-**Were there any specific activities that were challenging for you? Why or why not?**
-There weren't any activities in particular that were challenging for me. Incident response and handling security is just being a professional — making sure that when an incident takes place, you act according to the playbook, and afterward, make sure it doesn't happen again.
-
-**Has your understanding of incident detection and response changed since taking this course?**
-My understanding of incident detection and response has greatly increased. I now understand that incident detection and response are how cyber professionals detect and respond to cyber threats, and that they are essential parts of maintaining cybersecurity.
-
-**Was there a specific tool or concept that you enjoyed the most? Why?**
-I enjoyed learning about network traffic analysis and using Wireshark and tcpdump. I liked being able to use tools to capture, analyze, and filter through network traffic, and I plan to keep building proficiency with network protocol analyzer tools.
