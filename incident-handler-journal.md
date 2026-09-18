@@ -91,7 +91,7 @@ This scenario placed me as a SOC analyst investigating a suspicious file hash af
 - **What:** A phishing alert was triggered after an employee downloaded a suspicious file.
 - **When:** Wednesday, July 20th, 9:30 AM.
 - **Where:** The computer of an employee at a financial services company.
-- **Why:** A malicious actor sent a phishing email with a malicious file disguised as a resume; the employee downloaded it, triggering the alert.
+- **Why:** A malicious actor sent a phishing email with a malicious file disguised as a resume; the employee was not aware of how to spot a phishing email and downloaded it, triggering the alert.
 
 **Additional notes:** To prevent a repeat, the company should train employees to spot phishing emails — for example, grammatical errors and inconsistencies in the message.
 
