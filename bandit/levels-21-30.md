@@ -22,7 +22,7 @@
 
 ## Level 23
 
-**Goal:**  Find the password from a program is running automatically at regular intervals from cron. Look in /etc/cron.d/ for the configuration and see what command is being executed
+**Goal:**  Find the password from a program running automatically at regular intervals from cron. Look in /etc/cron.d/ for the configuration and see what command is being executed
 
 **What I tried first** 
 - I listed the items in the `/etc/cron.d directory` and used the `cat` command on the file that corresponds with the level. I then ran the `cat` command on the file  was referenced in the file that contained the instructions for the cron program and tried to run the `cat` command on the file that the cron program was writing the password to. That did not work because variables were used rather than a filename
@@ -35,3 +35,16 @@
 - The syntax`var_name=var_value` is used to declare a variable in bash scripting
 - The syntax `var_name=$(command)` saves the output of a command in a variable
 - `$var_name` accesses the value of an existing variable
+
+## Level 24
+
+**Goal:**  Find the password from a program running automatically at regular intervals from cron. Look in /etc/cron.d/ for the configuration and see what command is being executed. Create a shell script to get the password
+
+
+**What worked:**
+- Using the `cat` command on the cronjob file that corresponds with the level as well as the bash script that the cronjob file refrences. I then created a script that writes the password from bandit24 to a file I can read. Finally, I changed the permissions on that script and ran it by copying the script file to the folder that the other bash script refrences
+
+**New to me:**
+- A script can refrence and execute another script
+- To run a file inside a directory, the directory must have the execute permission
+- Bash scripts begin with `#!/bin/bash`
