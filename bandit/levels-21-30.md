@@ -49,7 +49,7 @@
 - To run a file inside a directory, the directory must have the execute permission
 - Bash scripts begin with `#!/bin/bash`
 
-## Level 265
+## Level 25
 
 **Goal:**  A daemon is listening on port 30002 and will give you the password for bandit25 if given the password for bandit24 and a secret numeric 4-digit pincode. Use brute force to find the pincode
 
