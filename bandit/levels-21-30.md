@@ -48,3 +48,14 @@
 - A script can refrence and execute another script
 - To run a file inside a directory, the directory must have the execute permission
 - Bash scripts begin with `#!/bin/bash`
+
+## Level 265
+
+**Goal:**  A daemon is listening on port 30002 and will give you the password for bandit25 if given the password for bandit24 and a secret numeric 4-digit pincode. Use brute force to find the pincode
+
+
+**What worked:**
+- Created a bash script that connected to port 30002 using the `nc` command and ran a loop which wrote the password of bandit24 as well as every number combination between 0000 and 9999 to stdout one by one until it was correct
+
+**New to me:**
+- In bash, data flows from left to right through a pipe `|`. Meaning the output generator (In this case the loop) comes before the command that reads the input(In this case `nc`)
