@@ -21,3 +21,13 @@
 - `git push` updates local changes in remote repositories. When pushing for the first time, you should also define the branch with `-u`
 - `Git Ignore` is a file with the filename ‘.gitignore’. In this file, all file names/extensions that should be ignored by the commit are written
 - `git add` updates what files will be part of the next commit. The -f flag forces files to be able to be committed, even when they are normally ignored
+
+## Level 33
+
+**Goal:** Escape the uppercase shell and find the password
+
+**What worked:**
+- Used `$0` to break out of the uppercase shell then read the password file `bandit33`
+
+**New to me:**
+- `$0` looks at whatever program is running(usually the shell itself)
