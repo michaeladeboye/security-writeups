@@ -68,3 +68,11 @@
 **New to me:**
 - The `v` shortcut in `more` automatically opens the current file in the system's default text editor (vim)
 - The `:shell` command in `vim` tells the editor to temporarily pause itself and open a command prompt for the user
+
+## Level 27
+
+**Goal:** Get the password for bandit27
+
+**What worked:**
+- I executed `bandit27-do` which told me that it allows you to run a command as another user. I then used it to run the `cat` command on the bandit27 file to output the password
+
