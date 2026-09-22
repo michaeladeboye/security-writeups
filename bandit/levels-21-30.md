@@ -78,10 +78,21 @@
 
 ## Level 28
 
-**Goal:** From your local machine, clone the git repository at ssh://bandit27-git@bandit.labs.overthewire.org/home/bandit27-git/repo via the port 2220 and find the password for the next level. The password for the user bandit27-git is the same as for the user bandit27. 
+**Goal:** From your local machine, clone the git repository at ssh://bandit27-git@bandit.labs.overthewire.org/home/bandit27-git/repo via the port 2220 and find the password for the next level. The password for the user bandit27-git is the same as for the user bandit27
 
 **What worked:**
-- using `git clone` on the repository, while specifying the port 2220
+- Using `git clone` on the repository, while specifying the port 2220 then using the `cat` command on the README file in the copied directory
 
 **New to me:**
 - `git clone` copies an existing repository
+
+## Level 29
+
+**Goal:** From your local machine, clone the git repository at ssh://bandit28-git@bandit.labs.overthewire.org/home/bandit28-git/repo via the port 2220 and find the password for the next level. The password for the user bandit28-git is the same as for the user bandit28.
+
+**What worked:**
+- Using `git clone` on the repository, while specifying the port 2220 then using the `cat` command on the README file in the copied directory. After that using `git log` to see the commit log and `git show` to see the content of the specified commit
+
+**New to me:**
+- `git log` shows  the commit log
+- `git show <commit>` shows the content of a commit
