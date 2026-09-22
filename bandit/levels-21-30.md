@@ -76,3 +76,12 @@
 **What worked:**
 - I executed `bandit27-do` which told me that it allows you to run a command as another user. I then used it to run the `cat` command on the bandit27 file to output the password
 
+## Level 28
+
+**Goal:** From your local machine, clone the git repository at ssh://bandit27-git@bandit.labs.overthewire.org/home/bandit27-git/repo via the port 2220 and find the password for the next level. The password for the user bandit27-git is the same as for the user bandit27. 
+
+**What worked:**
+- using `git clone` on the repository, while specifying the port 2220
+
+**New to me:**
+- `git clone` copies an existing repository
