@@ -40,7 +40,6 @@
 
 **Goal:**  Find the password from a program running automatically at regular intervals from cron. Look in /etc/cron.d/ for the configuration and see what command is being executed. Create a shell script to get the password
 
-
 **What worked:**
 - Using the `cat` command on the cronjob file that corresponds with the level as well as the bash script that the cronjob file refrences. I then created a script that writes the password from bandit24 to a file I can read. Finally, I changed the permissions on that script and ran it by copying the script file to the folder that the other bash script refrences
 
@@ -53,9 +52,19 @@
 
 **Goal:**  A daemon is listening on port 30002 and will give you the password for bandit25 if given the password for bandit24 and a secret numeric 4-digit pincode. Use brute force to find the pincode
 
-
 **What worked:**
 - Created a bash script that connected to port 30002 using the `nc` command and ran a loop which wrote the password of bandit24 as well as every number combination between 0000 and 9999 to stdout one by one until it was correct
 
 **New to me:**
 - In bash, data flows from left to right through a pipe `|`. Meaning the output generator (In this case the loop) comes before the command that reads the input(In this case `nc`)
+
+## Level 26
+
+**Goal:** The shell for user bandit26 is not /bin/bash, but something else. Find out what the shel for user bandit26 is, how it works and how to break out of it.
+
+**What worked:**
+- I first use the `cat` command on `/etc/passwd` to find the shell used for bandit26. I then copied the private ssh key to a file on my local machine. After that I made the terminal window small so that `more` would not fill the screen and exit and used `ssh` with the `-i` option, refrencing the file with the private key. I then pressed v to open the file inside the vim editor. Next I entered command mode and ran these two commands. `:set shell=/bin/bash` and `:shell`. Once I did this I used the cat command on the bandit26 file and got the password
+
+**New to me:**
+- The `v` shortcut in `more` automatically opens the current file in the system's default text editor (vim)
+- The `:shell` command in `vim` tells the editor to temporarily pause itself and open a command prompt for the user
