@@ -52,4 +52,4 @@ I built an isolated detection lab on my Mac using Kali as an attacker (recon), a
 - Not keeping enough storage free when working in VMs can lead to VM corruption
 
 ## Next
-Attacks + my own detection rules
+Attack and detect cycles(brute-force login, suspicious PowerShell, a new local admin account, a scheduled task for persistence)+ my own detection rules
