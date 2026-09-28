@@ -43,7 +43,7 @@ I built an isolated detection lab on my Mac using Kali as an attacker (recon), a
 - Wireshark: SYN scan was obvious because nmap sent SYN packets to 1000 ports with only microseconds separating each send
 ![Wireshark](lab-screenshots/wireshark.png)
 - Wazuh caught nothing from the scan on Windows VM. Firewall dropped it silently, Windows Firewall logging is off by default which is a detection gap
-- Wazuh showed "Suspicious Process – svchost.exe" at level 12, this is likely a false positive
+- Wazuh showed "Suspicious Process – svchost.exe" at level 12, this is likely a false positive because svchost.exe is a normal windows process and nothing malicious was happening
 ![Wazuh dashboard](lab-screenshots/wazuhdash.png)
 
 ## What I learned
