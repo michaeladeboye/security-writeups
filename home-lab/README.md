@@ -35,7 +35,9 @@ I built an isolated detection lab on my Mac using Kali as an attacker (recon), a
 
 ## Test: recon vs detection
 - I ran `sudo nmap -sn 192.168.128.0/24` to find the machines on the network. Host discovery found 4 hosts
+
 ! [Nmap discovery](lab-screenshots/nmap-discovery.png)
+
 - Then I ran `sudo nmap -sV 192.168.128.2` to scan Wazuh. 2 ports were open, 22 for SSH and 443 for the Wazuh dashboard, while 998 were closed
 - Then I ran `sudo nmap -Pn -sV 192.168.128.3` to scan Windows while skipping the ping check. All 1000 ports were filtered which means the firewall was dropping everything
 - Wireshark: SYN scan was obvious because nmap sent SYN packets to 1000 ports with only microseconds separating each send
