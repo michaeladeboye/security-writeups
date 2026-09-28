@@ -38,6 +38,7 @@ I built an isolated detection lab on my Mac using Kali as an attacker (recon), a
 - I ran `sudo nmap -sn 192.168.128.0/24` to find the machines on the network. Host discovery found 4 hosts
 ![Nmap discovery](lab-screenshots/nmap-discovery.png)
 - Then I ran `sudo nmap -sV 192.168.128.2` to scan Wazuh. 2 ports were open, 22 for SSH and 443 for the Wazuh dashboard, while 998 were closed
+![Wazuh Nmap](lab-screenshots/nmap-wazuh.png)
 - Then I ran `sudo nmap -Pn -sV 192.168.128.3` to scan Windows while skipping the ping check. All 1000 ports were filtered which means the firewall was dropping everything
 ![Windows Nmap](lab-screenshots/nmap-windows.png)
 - Wireshark: SYN scan was obvious because nmap sent SYN packets to 1000 ports with only microseconds separating each send
@@ -52,4 +53,4 @@ I built an isolated detection lab on my Mac using Kali as an attacker (recon), a
 - Not keeping enough storage free when working in VMs can lead to VM corruption
 
 ## Next
-Attack and detect cycles(brute-force login, suspicious PowerShell, a new local admin account, a scheduled task for persistence)+ my own detection rules
+Attack and detect cycles (brute-force login, suspicious PowerShell, a new local admin account, a scheduled task for persistence) + my own detection rules
