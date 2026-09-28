@@ -3,6 +3,9 @@
 ## Overview
 I built an isolated detection lab on my Mac using Kali as an attacker (recon), a Windows endpoint running Sysmon, and Wazuh as the SIEM. I built this to build on my understanding of SIEM tools, security monitoring, and data analysis.
 ## Architecture
+
+![Lab architecture](lab-screenshots/architecture.png)
+
 | Machine | IP | OS | Role |
 |---|---|---|---|
 | Kali | 192.168.128.4 | Kali Linux (ARM64) | Attacker |
