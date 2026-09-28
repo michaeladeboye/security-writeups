@@ -8,7 +8,7 @@ IS&T + Cybersecurity @ UTSA.
 - [picoCTF](picoctf/) — in progress
 
 ## Home Lab
-- [Build notes](homelab/) — Kali attacker, Windows target, Wazuh SIEM
+- [Build notes](home-lab/) — Kali attacker, Windows target, Wazuh SIEM
 - [Detection rules](homelab/detections/) — custom rules + what triggered them
 
 ## Incident Handler Journal
