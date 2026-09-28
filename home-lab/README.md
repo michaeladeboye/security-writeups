@@ -19,6 +19,7 @@ I built an isolated detection lab on my Mac using Kali as an attacker (recon), a
 - Windows + Sysmon: Windows is the target, Sysmon records what happens on the machine
 - Wazuh: SIEM monitoring and alerts
 - Host Only: Keeps vulnerable systems isolated, VMs can only talk to each other and my Mac. Verified from Kali: ping 8.8.8.8 fails, ping Wazuh works
+![Ping test](lab-screenshots/ping.png)
 
 ## Problems I hit
 **Storage Problem**
@@ -35,14 +36,15 @@ I built an isolated detection lab on my Mac using Kali as an attacker (recon), a
 
 ## Test: recon vs detection
 - I ran `sudo nmap -sn 192.168.128.0/24` to find the machines on the network. Host discovery found 4 hosts
-
 ![Nmap discovery](lab-screenshots/nmap-discovery.png)
-
 - Then I ran `sudo nmap -sV 192.168.128.2` to scan Wazuh. 2 ports were open, 22 for SSH and 443 for the Wazuh dashboard, while 998 were closed
 - Then I ran `sudo nmap -Pn -sV 192.168.128.3` to scan Windows while skipping the ping check. All 1000 ports were filtered which means the firewall was dropping everything
+![Windows Nmap](lab-screenshots/nmap-windows.png)
 - Wireshark: SYN scan was obvious because nmap sent SYN packets to 1000 ports with only microseconds separating each send
+![Wireshark](lab-screenshots/wireshark.png)
 - Wazuh caught nothing from the scan on Windows VM. Firewall dropped it silently, Windows Firewall logging is off by default which is a detection gap
 - Wazuh showed "Suspicious Process – svchost.exe" at level 12, this is likely a false positive
+![Wazuh dashboard](lab-screenshots/wazuhdash.png)
 
 ## What I learned
 - Only what is logged can be detected
