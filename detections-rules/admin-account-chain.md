@@ -43,7 +43,7 @@ Tags the admin-group-add event into the attack_chain group
 Detects when both events from rules 100002 and 100003 land within 60s from the same user
 
 ## Result
-
+![Detection Result](detection-screenshots/Rule100004.png)
 
 ## MITRE
 - T1136.001
