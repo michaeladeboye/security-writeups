@@ -3,7 +3,7 @@
 - `net localgroup Administrators hacker /add`
 
 ## Detection
-- Produced events 4720 and 4732 respectively
+- Produced Windows Security events 4720 and 4732 respectively
 - The built in rules 60109 and 60154 caught each one
 
 ## The Gap
@@ -43,7 +43,7 @@ Tags the admin-group-add event into the attack_chain group
 Detects when both events from rules 100002 and 100003 land within 60s from the same user
 
 ## Result
-Custom rule 100004 triggered at level 14 when account is created and added to admin group
+Custom rule 100004 triggered at level 14 when account was created and added to admin group
 ![Detection Result](detection-screenshots/Rule100004.png)
 
 ## MITRE
