@@ -12,7 +12,7 @@
 
 ## Result
 - No need for a custom rule; default was sufficient
-![detection-screenshots](SusPowershell.png)
+![Detection-Result](detection-screenshots/SusPowershell.png)
 
 
 ## MITRE
