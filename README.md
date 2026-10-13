@@ -9,7 +9,7 @@ IS&T + Cybersecurity @ UTSA.
 
 ## Home Lab
 - [Build notes](home-lab/) — Kali attacker, Windows target, Wazuh SIEM
-- [Detection rules](detection-rules/) — custom rules + what triggered them
+- [Detection rules](detections-rules/) — custom rules + what triggered them
 
 ## Incident Handler Journal
 - [Journal](incident-handler-journal.md) - Incident Handling, Wireshark, tcpdump
