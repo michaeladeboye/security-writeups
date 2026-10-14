@@ -2,7 +2,7 @@
 
 A set of attack-and-detect exercises in my home lab (Kali attacker, Windows 11 + Sysmon endpoint, Wazuh SIEM). For each attack I ran it, found the resulting events, and either wrote a custom Wazuh rule to catch it or evaluated whether the built-in detection was already sufficient. See the [home lab build](../home-lab/README.md) for the environment
 
-All custom rules live in [local_rules.xml](detection-rules/local_rules.xml)
+All custom rules live in [local_rules.xml](local_rules.xml)
 
 ## Cycles
 
