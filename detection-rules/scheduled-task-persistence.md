@@ -30,4 +30,4 @@ Custom Rule triggered at level 12 when scheduled task was created and ran at sys
 ![Detection Result](detection-screenshots/Rule100005.png)
 
 ## MITRE
-- T1053.005
+- T1053.005 (Scheduled Task)
