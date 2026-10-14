@@ -7,7 +7,7 @@
 - Caught by built-in rule 92057 (level 12): "Powershell.exe spawned a powershell process which executed a base64 encoded command"
 - Wazuh already detects this technique; no custom rule needed
 
-## Finding: severity inversion (tuning issue)
+## Finding
 - A second rule, 92213 (level 15, "Executable file dropped in folder commonly used by malware"), also fired
 
 ## Result
