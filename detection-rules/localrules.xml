@@ -1,0 +1,38 @@
+<group name="local,windows,">
+
+  <rule id="100002" level="3">
+    <if_sid>60109</if_sid>
+    <description>Account created (chain tracking)</description>
+    <group>attack_chain,</group>
+  </rule>
+
+  <rule id="100003" level="3">
+    <if_sid>60154</if_sid>
+    <description>Added to Administrators (chain tracking)</description>
+    <group>attack_chain,</group>
+  </rule>
+
+  <rule id="100004" level="14" frequency="2" timeframe="60">
+    <if_matched_group>attack_chain</if_matched_group>
+    <same_field>win.eventdata.subjectUserName</same_field>
+    <description>Windows account created and added to administrators group</description>
+    <mitre><id>T1136.001</id></mitre>
+  </rule>
+
+  <rule id="100005" level="12">
+    <if_sid>60228</if_sid>
+    <field name="win.eventdata.taskContent">S-1-5-18</field>
+    <field name="win.eventdata.taskContent">calc.exe</field>
+    <description>Scheduled task created; runs as system</description>
+    <mitre><id>T1053.005</id></mitre>
+  </rule>
+
+
+  <rule id="100006" level="14" frequency="4" timeframe="10">
+    <if_matched_sid>60122</if_matched_sid>
+    <same_field>win.eventdata.targetUserName</same_field>
+    <same_field>win.eventdata.ipAddress</same_field>
+    <description>Brute force login attempt</description>
+    <mitre><id>T1110</id></mitre>
+  </rule>
+</group>
