@@ -9,7 +9,7 @@ Writeups for [Bandit](https://overthewire.org/wargames/bandit/), OverTheWire's b
 | [levels-01-10.md](levels-01-10.md) | 1–10 |
 | [levels-11-20.md](levels-11-20.md) | 11–20 |
 | [levels-21-30.md](levels-21-30.md) | 21–30 |
-| [levels-31-34.md](levels-31-33.md) | 31–33 |
+| [levels-31-33.md](levels-31-33.md) | 31–33 |
 
 ## What it covers
 - **Linux basics**: navigating the filesystem, hidden files, weird filenames, `find` by size, owner, and permissions
