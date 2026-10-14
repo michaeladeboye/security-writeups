@@ -28,4 +28,4 @@
 ![Brute Force Detection](detection-screenshots/Rule100006.png)
 
 ## MITRE
-- T1110
+- T1110 (Brute Force)
