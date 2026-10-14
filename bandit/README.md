@@ -3,7 +3,6 @@
 Writeups for [Bandit](https://overthewire.org/wargames/bandit/), OverTheWire's beginner Linux wargame. Each level means SSHing into the next account with a password you find on the current one. I completed the full wargame.
 
 ## Writeups
-Levels are grouped about 10 per file, with one section per level.
 
 | File | Levels |
 |---|---|
