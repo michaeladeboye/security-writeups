@@ -8,7 +8,7 @@ All custom rules live in [local_rules.xml](local_rules.xml)
 
 | # | Attack | Technique | Detection approach | Rule |
 |---|---|---|---|---|
-| 1 | [New admin account](01-admin-account-chain.md) | T1136.001 | Correlation: account created + added to Administrators by same user within 60s | 100004 (lvl 14) |
+| 1 | [New admin account](admin-account-chain.md) | T1136.001 | Correlation: account created + added to Administrators by same user within 60s | 100004 (lvl 14) |
 | 2 | [Scheduled task persistence](scheduled-task-persistence.md) | T1053.005 | Field match on task definition (runs as SYSTEM) | 100005 (lvl 12) |
 | 3 | [Encoded PowerShell](suspicious-powershell.md) | T1059.001 | Built-in rule sufficient; found a severity-inversion tuning issue | built-in 92057 |
 | 4 | [Brute-force login](brute-force.md) | T1110 | Frequency: repeated logon failures, same user + same source IP | 100006 (lvl 14) |
