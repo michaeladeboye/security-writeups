@@ -47,5 +47,5 @@ Custom rule 100004 triggered at level 14 when account was created and added to a
 ![Detection Result](detection-screenshots/Rule100004.png)
 
 ## MITRE
-- T1136.001
-- T1098.007
+- T1136.001 (Create Account: Local Account)
+- T1098.007 (Account Manipulation: Additional Local or Domain Groups)
