@@ -60,4 +60,4 @@ The `--` comments out the entire password check, so the database returns the adm
 
 ## Remediation
 
-- Use **parameterized queries / prepared statements** so input is always treated as data, never as part of the SQL
+- Use **parameterized queries** so input is always treated as data, never as part of the SQL
