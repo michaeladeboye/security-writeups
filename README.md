@@ -24,4 +24,4 @@ Each lab covers the exploit, root cause, and remediation.
 - [Journal](incident-handler-journal.md) — incident handling, Wireshark, tcpdump
 
 ## Tools
-- [domain-scanner](https://github.com/michaeladeboye/domain-scanner) — Python tool that checks domains for missing security headers (HSTS, CSP, X-Frame-Options), TLS cert expiry, and TLS 1.2+ support
+- [Domain Scanner](https://github.com/michaeladeboye/domain-scanner) — Python tool that checks domains for missing security headers (HSTS, CSP, X-Frame-Options), TLS cert expiry, and TLS 1.2+ support
